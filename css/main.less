@@ -1,0 +1,68 @@
+@import "bootstrap/bootstrap.less";
+@import "bootstrap/responsive.less";
+@import "spacevariables.less";
+@import "spacebootswatch.less";
+@import "elements.less";
+
+/* ==========================================================================
+   Fleet custom styles
+   ========================================================================== */
+@navbarInverseBackground: #121111;
+@navbarInverseText:       #f0ebe8;
+@navbarBackground: transparent;
+@navbarText:       #000;
+@navbarBorder: transparent;
+@textColor: @white;
+@backgroundcolor: #000;//#0b061c;
+
+
+//define mixin for transparent backgrounds
+.crossbrowsertransparentgradient(@color,@alphatop, @alphabottom){
+  @rgbatop: rgba(red(@color),green(@color),blue(@color),@alphatop);
+  @rgbabottom: rgba(red(@color),green(@color),blue(@color),@alphabottom);
+  @argb: argb(@rgbatop);
+  @argbbottom: argb(@rgbabottom);
+  background-color: @color;
+  background-color: @rgbatop;
+  filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb}, endColorstr=@{argb})";
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb}, endColorstr=@{argb})";
+  background: ~"-moz-linear-gradient(top, @{rgbatop} 0%, @{rgbabottom} 100%)"; /* FF3.6+ */
+  background: ~"-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)))"; /* Chrome,Safari4+ */
+  background: ~"-webkit-linear-gradient(top, @{rgbatop} 0%,@{rgbabottom} 100%)"; /* Chrome10+,Safari5.1+ */
+  background: ~"-o-linear-gradient(top, @{rgbatop} 0%,@{rgbabottom} 100%)"; /* Opera 11.10+ */
+  background: ~"-ms-linear-gradient(top, @{rgbatop} 0%,@{rgbabottom} 100%)"; /* IE10+ */
+  background: ~"linear-gradient(to bottom, @{rgbatop} 0%,@{rgbabottom} 100%)"; /* W3C */
+  filter: ~"progid:DXImageTransform.Microsoft.gradient( startColorstr=@{argb}, endColorstr=@{argbbottom},GradientType=0 )"; /* IE6-9 */
+}
+
+//define mixin for transparent backgrounds
+.crossbrowsertransparentbackground(@color,@alpha){
+  @rgba: rgba(red(@color),green(@color),blue(@color),@alpha);
+  @argb: argb(@rgba);
+  background-color: @color;
+  background-color: @rgba;
+  filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb}, endColorstr=@{argb})";
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb}, endColorstr=@{argb})";
+}
+
+
+.navbar .btn-navbar {
+  //background-color: transparent;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
