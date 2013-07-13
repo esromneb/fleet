@@ -4,7 +4,7 @@
 	<AppType>RemoteHigh</AppType>
 	<FriendlyName>Fleet</FriendlyName>
 	<VehicleStatus>Drive</VehicleStatus>
-	<AutoStart>true</AutoStart>
+	<AutoStart>false</AutoStart>
 	<AppCategory>General</AppCategory>
 	<RemotePath></RemotePath>
 	<IconURL>Icon.png</IconURL>
