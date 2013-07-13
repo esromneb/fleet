@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<langConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active = "false">
+    
+    <!-- This default section will be used if not explicitly defined in this document. -->
+	<language val="default">
+        <shortDesc>This is the short description used as default.</shortDesc>
+	    <longDesc>This is the long description used as default.</longDesc>
+        <iconImage>This is the url of the icon image that is used as default.</iconImage>
+        <friendlyName>This is the name shown for the app that is used as default.</friendlyName>
+    </language>
+    
+    <!-- When val equals "en" or any value before the "-" in the ISO locale standards, 
+        it will be the default used for the entire en (english) locale if not explicitly 
+        defined in this document. -->
+    <language val="en">
+        <shortDesc>This is the short description for the app in English</shortDesc>
+        <longDesc>This is the long description for the app in English</longDesc>
+        <iconImage>This is the url of the icon image that is used for English</iconImage>
+        <friendlyName>This is the name shown for the app that is used for English</friendlyName>
+    </language>
+    
+    <!-- The following are examples of explicit definitions. -->
+    <language val="es-US">
+        <shortDesc>This is the short description for the app in Español - United States</shortDesc>
+        <iconImage>This is the url of the icon image that is used for Español - United States</iconImage>
+        <friendlyName>This is the name shown for the app that is used for Español - United States</friendlyName>
+    </language>
+    <language val="es-ES">
+        <shortDesc>This is the short description for the app in Español - Spain</shortDesc>
+        <longDesc>This is the long description for the app in Español - Spain</longDesc>
+        <friendlyName>This is the name shown for the app that is used for Español - Spain</friendlyName>
+    </language>
+    <language val="fr-CA">
+        <shortDesc>This is the short description for the app in French - Canada</shortDesc>
+        <longDesc>This is the long description for the app in French - Canada</longDesc>
+        <iconImage>This is the url of the icon image that is used for French - Canada</iconImage>
+        <friendlyName>This is the name shown for the app that is used for French - Canada</friendlyName>
+    </language>
+    <language val="fr-FR">
+        <shortDesc>This is the short description for the app in French - France</shortDesc>
+        <longDesc>This is the long description for the app in French - France</longDesc>
+        <iconImage>This is the url of the icon image that is used for French - France</iconImage>
+    </language>
+</langConfig>
