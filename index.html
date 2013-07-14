@@ -22,12 +22,16 @@
     </head>
     <body onload="">
     <div id="welcomeMessage"></div>
-    <a id="mtrLink" href="http://localhost:3000/env/">link 2 meteor</a><br><br>
-    <a href="http://localhost:3000/testraw.html">link to test raw</a>
+    <img src="media/cars%20with%20speed%20lines.png" alt="Smiley face" height="400" width="800">
+    <!-- <a id="mtrLink" href="http://localhost:3000/env/">link 2 meteor</a><br><br>
+    <a href="http://localhost:3000/testraw.html">link to test raw</a> -->
     <script type="text/javascript">
     	$('#mtrLink').attr("href", "http://localhost:3000/env/" + encodeURIComponent(window.location.origin));
     	var url = "http://localhost:3000/env/" + encodeURIComponent(window.location.origin);
-    	window.location = url;
+    	setTimeout(function(){
+    		window.location = url;
+    	}, 1300);
+    	
     </script>
     
     
